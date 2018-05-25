@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 
 # Prereqs
-sudo apt-get install \
+sudo apt-get install -y \
 	apt-transport-https \
 	bash-completion \
 	ca-certificates \
@@ -26,4 +26,4 @@ sudo add-apt-repository \
 	stable"
 
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get install -y docker-ce
