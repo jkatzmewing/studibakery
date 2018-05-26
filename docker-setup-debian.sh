@@ -9,6 +9,7 @@ sudo apt-get install -y \
 	bash-completion \
 	ca-certificates \
 	cron-apt \
+	dirmngr \
 	git \
 	gnupg2 \
 	software-properties-common
