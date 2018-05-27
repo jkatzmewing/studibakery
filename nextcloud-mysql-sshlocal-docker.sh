@@ -16,7 +16,8 @@ sudo mkdir -p /mnt/data/nextcloud-mysql
 sudo docker network create net-nextcloud-mysql
 
 sudo docker run -d \
-	-e MYSQL_ROOT_PASSWORD="$mysql_root" MYSQL_PASSWORD="$mysql_user" \
+	-e MYSQL_ROOT_PASSWORD="$mysql_root" \
+	-e MYSQL_PASSWORD="$mysql_user" \
 	--name mysql \
 	--network net-nextcloud-mysql \
 	mariadb
