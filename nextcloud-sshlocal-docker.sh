@@ -6,5 +6,5 @@ sudo mkdir -p /mnt/data/nextcloud
 sudo docker run -d \
 	-v /mnt/data/nextcloud:/var/www/html \
 	--name nextcloud \
-	-p 8080:3080 \
+	-p 3080:80 \
 	nextcloud
