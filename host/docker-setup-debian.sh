@@ -10,6 +10,7 @@ sudo apt-get install -y \
 	ca-certificates \
 	cron-apt \
 	dirmngr \
+	fail2ban \
 	git \
 	gnupg2 \
 	software-properties-common
