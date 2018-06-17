@@ -8,6 +8,7 @@ sudo apt-get install -y \
 	apt-transport-https \
 	bash-completion \
 	ca-certificates \
+	certbot \
 	cron-apt \
 	dirmngr \
 	fail2ban \
