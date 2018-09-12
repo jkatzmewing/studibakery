@@ -1,0 +1,18 @@
+body {
+	background-color: linen;
+}
+
+h1 {
+	color: gray;
+	text-align: center;
+}
+
+h2 {
+	color: darkgray;
+	text-align: center;
+}
+
+p {
+	color: black;
+	text-align: center;
+}
