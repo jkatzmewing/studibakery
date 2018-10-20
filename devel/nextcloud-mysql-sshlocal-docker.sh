@@ -2,10 +2,10 @@
 # Set up local Nextcloud (with MySQL) for use over SSH tunnels
 
 echo "MySQL root password?"
-read mysql_rootpw
+read -r mysql_rootpw
 
 echo "MySQL user password?"
-read mysql_userpw
+read -r mysql_userpw
 
 sudo docker pull mariadb
 sudo docker pull nextcloud
