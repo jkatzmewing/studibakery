@@ -1,21 +1,5 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get dist-upgrade
-
-# Prereqs
-sudo apt-get install -y \
-	apt-transport-https \
-	bash-completion \
-	ca-certificates \
-	certbot \
-	cron-apt \
-	dirmngr \
-	fail2ban \
-	git \
-	gnupg2 \
-	software-properties-common
-
 # Docker repo key
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 # Verify to the user that the key installed correctly
