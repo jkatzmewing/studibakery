@@ -10,4 +10,5 @@ sudo a2enmod ssl proxy proxy_http headers
 
 resource_dir="host/apache2/resources"
 sudo cp "$resource_dir"/"$my_domain".conf /etc/apache2/sites-available
+sudo a2ensite "$my_domain"
 sudo systemctl reload apache2
