@@ -6,4 +6,4 @@
 ./host/apache/apache2-setup-debian.sh "hottestgirlinthe.club"
 ./host/certbot/cert-setup.sh "hottestgirlinthe.club"
 
-./nextcloud/nextcloud-mysql-docker-setup.sh "/mnt/data"
+./nextcloud/nextcloud-mysql-docker-setup.sh "17" "/mnt/data"

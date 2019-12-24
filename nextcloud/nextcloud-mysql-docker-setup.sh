@@ -1,8 +1,10 @@
 #!/bin/bash
 # Set up Nextcloud with MySQL
 
-nextcloud_data_dir="$1/nextcloud"
-mysql_data_dir="$1/nextcloud-mysql"
+nextcloud_version="$1"
+
+nextcloud_data_dir="$2/nextcloud"
+mysql_data_dir="$2/nextcloud-mysql"
 
 echo "MySQL root password?"
 read -r mysql_root_pw
@@ -16,8 +18,8 @@ read -r nextcloud_admin
 echo "Nextcloud admin password?"
 read -r nextcloud_admin_pw
 
-sudo docker pull mariadb
-sudo docker pull nextcloud
+sudo docker pull mariadb:latest
+sudo docker pull nextcloud:"$nextcloud_version"
 
 sudo mkdir -p "$mysql_data_dir" "$nextcloud_data_dir"
 
@@ -31,7 +33,7 @@ sudo docker run -d \
 	--name mysql \
 	--network net-nextcloud-mysql \
 	-v "$mysql_data_dir":/var/lib/mysql \
-	mariadb
+	mariadb:latest
 
 sudo docker run -d \
 	-e MYSQL_USER=nextcloud \
@@ -43,4 +45,4 @@ sudo docker run -d \
 	--name nextcloud \
 	--network net-nextcloud-mysql \
 	-p 3080:80 \
-	nextcloud
+	nextcloud:"$nextcloud_version"
