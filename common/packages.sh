@@ -10,5 +10,6 @@ sudo apt-get install -qqy \
 	fail2ban \
 	git \
 	gnupg2 \
+	htop \
 	software-properties-common
 
