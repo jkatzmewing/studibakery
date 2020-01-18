@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker exec --user www-data nextcloud php occ "$@"
+sudo docker exec -ti --user www-data nextcloud php occ "$@"
