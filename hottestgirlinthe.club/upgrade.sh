@@ -2,4 +2,6 @@
 
 sudo apt-get update && sudo apt-get -qqy dist-upgrade
 
-./nextcloud/upgrade.sh "17" "/mnt/data"
+./bin/occ.sh maintenance:mode --on
+./nextcloud/upgrade.sh "18" "/mnt/data"
+./bin/occ.sh maintenance:mode --off

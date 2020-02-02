@@ -11,5 +11,6 @@ sudo apt-get install -qqy \
 	git \
 	gnupg2 \
 	htop \
+	rsync \
 	software-properties-common
 
