@@ -16,7 +16,7 @@ sudo docker pull gitea/gitea:"$gitea_version"
 
 sudo mkdir -p "$gitea_db_dir"
 
-sudo docker network create network-gitea
+sudo docker network create net-gitea
 
 sudo docker run -d \
 	-e MYSQL_ROOT_PASSWORD="$mysql_root_pw" \
