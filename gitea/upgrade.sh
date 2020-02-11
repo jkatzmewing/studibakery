@@ -25,4 +25,4 @@ sudo docker run -d \
 	-v "$gitea_data_dir":/data \
 	-p 3000:3000 \
 	-p 2222:22 \
-	gitea/gitea:"$gitea_version"
+	gitea:"$gitea_version"
