@@ -6,7 +6,7 @@
 ./host/apache/setup.sh "hottestgirlinthe.club"
 ./host/certbot/setup.sh "hottestgirlinthe.club"
 
-./nextcloud/setup.sh "18" "/mnt/data"
+./nextcloud/setup.sh "19" "/mnt/data"
 ./gitea/setup.sh "1.11" "/mnt/data"
 
 # Set correct hostname in Nextcloud
