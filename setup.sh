@@ -3,8 +3,8 @@
 ./common/packages.sh
 
 ./host/docker/setup.sh
-./host/apache/setup.sh "hottestgirlinthe.club"
-./host/apache/setup.sh "janalexandrakatz.com"
+./host/apache2/setup.sh "hottestgirlinthe.club"
+./host/apache2/setup.sh "janalexandrakatz.com"
 
 ./host/certbot/setup.sh "hottestgirlinthe.club"
 ./host/certbot/setup.sh "janalexandrakatz.com"
