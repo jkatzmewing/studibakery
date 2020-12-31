@@ -39,4 +39,5 @@ $CONFIG = array (
   'installed' => true,
   'overwritehost' => 'hottestgirlinthe.club:443',
   'overwriteprotocol' => 'https',
+  'encryption.legacy_format_support' => false,
 );
