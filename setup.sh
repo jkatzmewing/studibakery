@@ -10,7 +10,7 @@
 ./host/apache2/setup.sh "hottestgirlinthe.club"
 ./host/apache2/setup.sh "janalexandrakatz.com"
 
-./nextcloud/setup.sh "21" "/mnt/data"
+./nextcloud/setup.sh "22" "/mnt/data"
 ./gitea/setup.sh "1.14" "/mnt/data"
 
 # Set correct hostname in Nextcloud
