@@ -33,6 +33,7 @@ sudo docker run -d \
 	--name mysql \
 	--network net-nextcloud-mysql \
 	-v "$mysql_data_dir":/var/lib/mysql \
+	--innodb_read_only_compressed=OFF \
 	mariadb:latest
 
 sudo docker run -d \
