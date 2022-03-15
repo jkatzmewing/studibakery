@@ -11,7 +11,7 @@
 ./host/apache2/setup.sh "janalexandrakatz.com"
 
 ./nextcloud/setup.sh "23" "/mnt/data"
-./gitea/setup.sh "1.15" "/mnt/data"
+./gitea/setup.sh "1.16" "/mnt/data"
 
 # Set correct hostname in Nextcloud
 sudo docker exec --user www-data nextcloud php occ config:system:set overwritehost --value="hottestgirlinthe.club:443"
